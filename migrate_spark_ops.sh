@@ -29,7 +29,12 @@ do
     spark_op_content=$(<"$src_path")
 
     # Replace string inputs with Input types and hardcode inter-subdomain references
-    subdomain_op_content=$(echo "$spark_op_content" | sed -e 's/String/Input/g' -e 's/import something.myclass/"HardcodedName"/g')
+    # Also, replace SparkOp with SubdomainOp
+    subdomain_op_content=$(echo "$spark_op_content" | sed -e 's/String/Input/g' -e 's/SparkOp/SubdomainOp/g' -e 's/import something.myclass/"HardcodedName"/g')
+
+    # Hardcode the operation names instead of using direct references
+    # Assuming that SparkOpInstance11 is an example of an operation that needs to be hardcoded
+    subdomain_op_content=$(echo "$subdomain_op_content" | sed -e 's/SparkOpInstance11/"SparkOpInstance11"/g')
 
     # Write the updated content to the new SubdomainOp Scala file
     echo "$subdomain_op_content" > "$target_path/$class_name.scala"
