@@ -1,26 +1,26 @@
-import platform.common_classes.SparkOp
+import platform.common_classes.SubdomainOp
 
 object DAG {
-  val ops: Set[SparkOp] = Set(
-    legacy.SparkOpInstance1,
-    legacy.SparkOpInstance2,
-    legacy.SparkOpInstance3,
-    legacy.SparkOpInstance4,
-    legacy.SparkOpInstance5,
-    legacy.SparkOpInstance6,
-    legacy.SparkOpInstance7,
-    legacy.SparkOpInstance8,
-    legacy.SparkOpInstance9,
-    legacy.SparkOpInstance10,
-    legacy.SparkOpInstance11,
-    legacy.SparkOpInstance12,
-    legacy.SparkOpInstance13,
-    legacy.SparkOpInstance14,
-    legacy.SparkOpInstance15,
-    legacy.SparkOpInstance16,
-    legacy.SparkOpInstance17,
-    legacy.SparkOpInstance18,
-    legacy.SparkOpInstance19,
-    legacy.SparkOpInstance20
+  val ops: Set[SubdomainOp] = Set(
+    subdomain.SubdomainSparkOpInstance1,
+    subdomain.SubdomainSparkOpInstance2,
+    subdomain.SubdomainSparkOpInstance3,
+    subdomain.SubdomainSparkOpInstance4,
+    subdomain.SubdomainSparkOpInstance5,
+    subdomain.SubdomainSparkOpInstance6,
+    subdomain.SubdomainSparkOpInstance7,
+    subdomain.SubdomainSparkOpInstance8,
+    subdomain.SubdomainSparkOpInstance9,
+    subdomain.SubdomainSparkOpInstance10,
+    subdomain.SubdomainSparkOpInstance11,
+    subdomain.SubdomainSparkOpInstance12,
+    subdomain.SubdomainSparkOpInstance13,
+    subdomain.SubdomainSparkOpInstance14,
+    subdomain.SubdomainSparkOpInstance15,
+    subdomain.SubdomainSparkOpInstance16,
+    subdomain.SubdomainSparkOpInstance17,
+    subdomain.SubdomainSparkOpInstance18,
+    subdomain.SubdomainSparkOpInstance19,
+    subdomain.SubdomainSparkOpInstance20
   )
 }
